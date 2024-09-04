@@ -1,0 +1,18 @@
+models:
+  - name: fct_sales
+    columns:
+      - name: product_name
+        tests:
+          - str_not_null
+      - name: agent_names
+        tests:
+        - str_not_null
+      - name: country
+        tests:
+          - str_not_null
+      - name: campaign_names
+        tests:
+          - str_not_null
+      - name: sources
+        tests:
+          - str_not_null
