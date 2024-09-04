@@ -16,3 +16,21 @@ models:
       - name: sources
         tests:
           - str_not_null
+      - name: total_revenue
+        tests:
+          - amount_not_negative
+      - name: rebill_revenue
+        tests:
+          - amount_not_negative
+      - name: number_of_rebills
+        tests:
+          - amount_not_negative
+      - name: discount_amount
+        tests:
+          - amount_not_negative
+      - name: returned_amount
+        tests:
+          - amount_not_negative
+      - name: days_from_order_to_return
+        tests:
+          - amount_not_negative
